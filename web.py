@@ -7,7 +7,7 @@ st.set_page_config(page_title='Prediction of Disease Outbreakss', layout='wide',
 diabetes_model=pickle.load(open(r"C:\Users\keert\OneDrive\Documents\Predictions of Disease Outbreak\training_models\diabetes_model.sav",'rb'))
 heart_model=pickle.load(open(r"C:\Users\keert\OneDrive\Documents\Predictions of Disease Outbreak\training_models\heart_model.sav",'rb'))
 parkinsons_model=pickle.load(open(r"C:\Users\keert\OneDrive\Documents\Predictions of Disease Outbreak\training_models\parkinsons_model.sav",'rb'))
-
+                                   
 with st.sidebar:
     selected= option_menu('prediction of disease outbreak system',['Diabetes Prediction','Heart Disease Prediction','Parkinsons Prediction'],menu_icon='hospital-fill',icons=['activity','heart','person'],default_index=0)
 
